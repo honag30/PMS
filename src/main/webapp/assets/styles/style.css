@@ -1,0 +1,202 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+html, body {
+    height: 90%;
+    margin: 0;
+}
+
+body {
+    /*font-family: 'Poppins', sans-serif;*/
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+
+
+.result-hidden{
+    display: none;
+}
+
+/*#myFilter{*/
+/*    padding-right: 12px;*/
+/*}*/
+
+
+/* For Body of every page*/
+.container-fluid{
+    min-height: calc(100vh - 56px - 53px);
+}
+.container-fluid{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* End For Body of every page*/
+
+
+
+/*Employee view all*/
+#mainPage{
+    min-height: calc(100vh - 56px - 53px);
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.footer,
+.push {
+    height: 50px;
+}
+
+.styled-table {
+    border-radius: .4rem;
+    overflow: hidden;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    box-shadow: 10px 10px 20px  rgba(0, 0, 0, 0.15) !important;
+}
+.filterable {
+    font-size: 18px;
+}
+.styled-table thead tr {
+    /*background-color: #009879;*/
+    background-image: linear-gradient(#79d7ed,#2da2c5);
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,.styled-table th input,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: thin solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #79d7ed;
+}
+/* End Employee view all*/
+
+/*Employee Form*/
+.required {
+    color: red;
+}
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+.footer,
+.push {
+    height: 50px;
+}
+/*End Employee Form*/
+
+
+/* Filter */
+.panel-heading .pull-right {
+    margin-top: -20px
+}
+
+.filters input[disabled] {
+    background-color: transparent;
+    border: none;
+    cursor: auto;
+    box-shadow: none;
+    padding: 0;
+    height: auto;
+    color: #ffffff;
+}
+
+ .filters input[disabled]::-webkit-input-placeholder {
+    color: #333
+}
+
+ .filters input[disabled]::-moz-placeholder {
+    color: #333
+}
+
+ .filters input[disabled]:-ms-input-placeholder {
+    color: #333
+}
+
+/* End Filter */
+
+/* Pagination */
+#myPager{
+    background: #fff;
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+}
+
+#myPager li{
+    list-style: none;
+    line-height: 50px;
+    margin: 0 5px;
+}
+#myPager li.pageNumber{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+#myPager li a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-weight: 600;
+    border-radius: 50%;
+}
+#myPager li.pageNumber:hover a,
+#myPager li.pageNumber.active a{
+    background: #333;
+    color: #fff;
+}
+
+.isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+div.d-flex:nth-child(3) > p:nth-child(1) {
+    font-style: italic;
+}
+
+/* End Pagination */
+
+
+/* Filter */
+#myFilter{
+    border-radius: 50px;
+    background: #fff;
+    /*display: flex;*/
+    padding: 10px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: #777777;
+    display: block;
+    font-weight: 600;
+    right: -15px;
+
+}
+
+#myFilter:hover {
+    background: #333;
+    color: #fff;
+
+}
+/* End Filter */
+
+.blur-all {
+    filter: blur(20px);
+}
+
